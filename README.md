@@ -1,10 +1,6 @@
 <h1 align="center">
- <img
-  width="180"
-  alt="Homer's donut"
-  src="https://github.com/komluk/homer/blob/main/main.png">
-    <br/>
-    My Home Lab dashboard
+ <img  alt="Homer's donut" src="https://github.com/komluk/homer/blob/main/main.png">
+    <br/>My Home Lab dashboard
 </h1>
 
 <h4 align="center">
