@@ -50,11 +50,10 @@ environment:
 
 ### Using the release tarball (prebuilt, ready to use)
 
-Download and extract the latest release (`homer.zip`) from the [release page](https://github.com/bastienwirtz/homer/releases), rename the `assets/config.yml.dist` file to `assets/config.yml`, and put it behind a web server.
+Download and extract the latest release and rename the `assets/config.yml.dist` file to `assets/config.yml`, and put it behind a web server.
 
 ```sh
-wget https://github.com/bastienwirtz/homer/releases/latest/download/homer.zip
-unzip homer.zip
+git clone git@github.com:komluk/homer.git
 cd homer
 cp assets/config.yml.dist assets/config.yml
 npx serve # or python -m http.server 8010 or apache, nginx ...
