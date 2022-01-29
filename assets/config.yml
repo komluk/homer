@@ -37,22 +37,17 @@ colors:
     link-hover: "#ffdd57"
 
 links:
-  - name: "Github"
+  - name: "Homer"
     icon: "fab fa-github"
     url: "https://github.com/komluk/homer"
-    target: "_blank" # optional html a tag target attribute
+    target: "_blank"
+  - name: "Boilerplates"
+    icon: "fas fa-book"
+    url: "https://github.com/komluk/boilerplates"
+    target: "_blank"
 
-  # this will link to a second homer page that will load config from additionnal-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additionnal-page.yml.dist used in this example:
-  # - name: "another page!"
-  #   icon: "fas fa-file-alt"
-  #   url: "#additionnal-page" 
-
-# Services
-# First level array represent a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Virtual Environment"
+  - name: "Server"
     icon: "fas fa-cloud"
     items:
       - name: "Proxmox"
@@ -61,9 +56,21 @@ services:
         tag: "vm"
         url: "https://192.168.0.186:8006"
         target: "_blank"
+      - name: "Portainer"
+        logo: "assets/tools/portainer.png"
+        subtitle: "A centralized service delivery platform for containerized apps"
+        tag: "docker"
+        url: "http://192.168.0.147:9000"
+        target: "_blank"
+      - name: "Synology nas"
+        logo: "assets/tools/dsm.png"
+        subtitle: "Synology backup and file server"
+        tag: "nas"
+        url: "https://nas.komluk.xyz"
+        target: "_blank"
 
-  - name: "Proxy"
-    icon: "fas fa-cloud"
+  - name: "Network"
+    icon: "fas fa-sitemap"
     items:
       - name: "Nginx Proxy Manager"
         logo: "assets/tools/nginxproxymanager.png"
@@ -72,18 +79,8 @@ services:
         url: "http://192.168.0.147:81"
         target: "_blank"
 
-  - name: "Containers"
-    icon: "fas fa-cloud"
-    items:
-      - name: "Portainer"
-        logo: "assets/tools/portainer.png"
-        subtitle: "A centralized service delivery platform for containerized apps"
-        tag: "docker"
-        url: "http://192.168.0.147:9000"
-        target: "_blank"
-
   - name: "Monitoring"
-    icon: "fas fa-cloud"
+    icon: "fas fa-heartbeat"
     items:
       - name: "Grafana"
         logo: "assets/tools/grafana.png"
@@ -97,3 +94,7 @@ services:
         tag: "app"
         url: "http://192.168.0.147:9090"
         target: "_blank"
+
+  - name: "Applications"
+    icon: "fas fa-cloud"
+    items:
