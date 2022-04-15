@@ -97,4 +97,9 @@ services:
 
   - name: "Applications"
     icon: "fas fa-cloud"
-    items:
+    items:      
+      - name: "Guacamole"
+        logo: "assets/tools/guacamole.png"
+        subtitle: "Remote Access"
+        tag: "vm"
+        url: "http://192.168.0.147:9200"
