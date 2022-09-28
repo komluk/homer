@@ -60,7 +60,7 @@ services:
         logo: "assets/tools/portainer.png"
         subtitle: "A centralized service delivery platform for containerized apps"
         tag: "docker"
-        url: "http://192.168.0.147:9000"
+        url: "http://portainer.home.lan"
         target: "_blank"
       - name: "Synology nas"
         logo: "assets/tools/dsm.png"
@@ -76,7 +76,13 @@ services:
         logo: "assets/tools/nginxproxymanager.png"
         subtitle: "Expose your services easily and securely"
         tag: "proxy"
-        url: "http://192.168.0.147:81"
+        url: "http://nginxreverseproxy.home.lan"
+        target: "_blank"
+      - name: "Pi Hole"
+        logo: "assets/tools/pihole.png"
+        subtitle: "Local dns and central place to view statistics"
+        tag: "dns"
+        url: "http://pi.hole"
         target: "_blank"
 
   - name: "Monitoring"
@@ -97,9 +103,9 @@ services:
 
   - name: "Applications"
     icon: "fas fa-cloud"
-    items:      
+    items:
       - name: "Guacamole"
         logo: "assets/tools/guacamole.png"
         subtitle: "Remote Access"
         tag: "vm"
-        url: "http://192.168.0.147:9200"
+        url: "http://guacamole.home.lan"
